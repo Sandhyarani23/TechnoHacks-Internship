@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+    
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Job Application Form</h1>
+    <form action="thanks.html" method="POST" enctype="multipart/form-data" autocomplete="off" id="form">
+        
+        <fieldset>
+            <legend class="info">*Personal Information</legend>
+       
+        <div class="form">
+            <div >
+       <div class="name"><br>
+            <label for="first">First Name</label><br>
+            <input type="text" id="first" placeholder="Your First Name" required><br><br>
+       </div>
+
+       <div class="name2 cls">
+        <label for="last">Last Name</label><br>
+        <input type="text" id="last" placeholder="Your Last Name" name="fullName">
+        <div class="error"></div><br>
+        </div>
+
+        <div class="email cls">
+            <label for="mail">Email</label><br>
+        <input type="email" id="mail" placeholder="Your email" name="email">
+        <div class="error"></div><br>
+        </div>
+
+        <div class="phone cls">
+            <label for="cont">Contact</label><br>
+        <input type="tel" id="cont" placeholder="Your Phone Number" name="phone">
+        <div class="error"></div><br>
+        </div> 
+    </div>
+    </legend>
+</fieldset>
+
+
+<fieldset class="job">
+    <legend>*Job Details</legend>
+    <div class="dom cls">
+    Select Your Domain<br>
+    <div class="error"></div>
+    <input type="radio" id="1" name="domain" required>
+<label for="1"  value="Full Stack developer">Full Stack developer</label>
+<br>
+
+<input type="radio" id="2" name="domain">
+<label for="2" value="UI/UX Designer">UI/UX Designer</label><br>
+
+<input type="radio" id="3" name="domain">
+<label for="3" value="Front End developer">Front End developer</label><br>
+
+<input type="radio" id="4" name="domain">
+<label for="4" value="Back End developer">Back End developer</label><br>
+
+<input type="radio" id="5" name="domain">
+<label for="5" value="Artificial Intelligence">Artificial Intelligence</label><br><br>
+
+
+<div class="drop">
+    <label>
+       Work Form <br><br>
+       <select name="Work-Form" id="work">
+        <option value="Part-Time">Part-Time</option>
+        <option value="Full-Time" selected>Full-Time</option>
+        <option value="Work-From-Home">Work-From-Home</option>
+       </select><br>
+
+    </label>
+
+</div><br>
+
+
+    <label for="salary">Desired Salary:</label>
+    <input type="number" id="salary" name="salary" placeholder="Enter Salary"><br>
+
+    <label for="startDate">Available Start Date:</label>
+    <input type="date" id="startDate" name="startDate" required><br>
+   
+</div>
+</fieldset>
+
+
+<fieldset class="eduu">
+    <legend>*Education</legend>
+    <div class="edu">
+    <label for="educationLevel">Highest Level of Education:</label>
+    <input type="text" id="educationLevel" name="educationLevel"><br>
+
+    <label for="school">School/University Name:</label>
+    <input type="text" id="school" name="school"><br>
+
+    <label for="major">Major/Field of Study:</label>
+    <input type="text" id="major" name="major"><br>
+
+    <label for="graduationDate">Graduation Date:</label>
+    <input type="date" id="graduationDate" name="graduationDate"><br>
+</div>
+</fieldset>       
+              
+   
+<fieldset class="work">
+    <legend>*Work Experience</legend>
+    <div class="work2">
+    <label for="jobTitle">Previous Job Title:</label>
+    <input type="text" id="jobTitle" name="jobTitle"><br>
+
+    <label for="company">Company Name:</label>
+    <input type="text" id="company" name="company"><br><br>
+
+    <div class="num">
+        <label for="num" name="experience" >Years Of Experience</label>
+        <input type="number" id="num" placeholder="Number of years"><br>
+        <br>
+    </div>
+
+    <label for="responsibilities">Responsibilities:</label>
+    <textarea id="responsibilities" name="responsibilities"></textarea><br>
+</div>
+</fieldset>
+
+
+<fieldset class="skii">
+    <legend>*Skills and Qualifications</legend>
+    <div class="ski">
+    <label for="skills">Relevant Skills:</label>
+    <textarea id="skills" name="skills"></textarea><br><br><br>
+
+    <div class="rate">
+        <label for="skill" >Rate Your Skills in your domain out of 10</label>
+        <input type="range" min="0" max="10" step="1" value="0" id="skill" name="skill-level"><br><br><br>
+    </div>
+
+    <label for="certifications">Certifications:</label>
+    <input type="file" id="certifications" name="certifications"></input><br>
+</div>
+</fieldset>
+
+        
+<fieldset class="ref">
+    <legend>*References</legend>
+    <div class="reff">
+    <label for="referenceName">Reference Name:</label>
+    <input type="text" id="referenceName" name="referenceName"><br><br>
+
+    <label for="relationship">Relationship:</label>
+    <input type="text" id="relationship" name="relationship"><br><br>
+
+    <label for="referenceContact">Contact:</label>
+    <input type="tel" id="referenceContact" name="referenceContact"><br>
+</fieldset>
+
+<fieldset class="add">
+    <legend>*Additional Information</legend>
+    <div class="addd">
+    <label for="coverLetter">Cover Letter:</label><br>
+    <textarea id="coverLetter" name="coverLetter"></textarea><br>
+
+    <div class="file cls">
+        <label for="cv">Upload Your Resume</label><br>
+        <input type="file" id="cv" placeholder="upload" name="resume" required><br><br>
+        <div class="error"></div>
+        </div>
+
+    <label for="documents">Other Documents:</label>
+    <input type="file" id="documents" name="documents" multiple><br>
+</div>
+</fieldset>
+
+    <input type="checkbox" name="imp" id="check" checked>
+    <label for="check">I here by accept all the privacy policy and terms of conditions</label><br><br><br>
+        <p>
+            <button type="reset" class="button">Reset</button>
+    <button class="button" id="button" name="submitt"> Submit</button>
+   
+    </p>
+</div>
+    </div>
+</div>
+</form>
+<script src="register.js" defer></script>
+</body>
+</html>
